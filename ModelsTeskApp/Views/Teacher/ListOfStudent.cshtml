@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "ListOfStudent";
+}
+
+<h2>
+    @*@for (int i = 0; i < Model.count; i++)
+        {
+            <h3> @Model[i].Name;</h3>
+            <h3> @Model[i].LastName;</h3>
+            <h3> @Model[i].YearOfBirth;</h3>
+            <h3> @Model[i].Pay;</h3>
+
+        }*@
+
+    @foreach (var item in Model)
+    {
+        <div>
+            @item.Name
+        </div>
+
+        <div>
+            @item.LastName
+        </div>
+
+        <div>
+            @item.YearOfBirth
+        </div>
+
+        <div>
+            @item.Pay
+        </div>
+    }
+</h2>
+
